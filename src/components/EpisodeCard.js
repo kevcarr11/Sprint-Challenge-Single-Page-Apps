@@ -1,4 +1,5 @@
 import React from "react";
+import { Toast, ToastBody, ToastHeader } from 'reactstrap';
 
 export default function EpisodeCard({ episode }){
 
@@ -6,14 +7,15 @@ export default function EpisodeCard({ episode }){
     console.log(episode)
 
     return (
-        <div className="card">
-            <h2>{name}</h2>
-            {air_date}
-            
-            
-
-
-            
-        </div>
+    <div className="p-3 my-2 rounded">
+        <Toast>
+            <ToastHeader>
+                {name}
+            </ToastHeader>
+            <ToastBody>
+                Date aired: <em>{air_date}</em>
+            </ToastBody>
+        </Toast>
+    </div>
     )
 }
