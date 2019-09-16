@@ -6,12 +6,6 @@ export default function LocationCard({ location }) {
   const { name, type, dimension, residents } = location;
 
   return (
-    // <div className="App">
-    //   <h2>{name}</h2>
-      // {type}-{dimension}
-    //   <br/>
-    //   {residents.length} residents
-    // </div>
     <div className="App p-3 bg-info my-2 rounded">
         <Toast>
             <ToastHeader>

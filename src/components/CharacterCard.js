@@ -8,7 +8,7 @@ export default function CharacterCard({ character }) {
     <div className="card p-3 bg-info my-2 rounded">
       <Toast>
         <ToastHeader>
-        <img src={image} alt="character pic" />
+          <img src={image} alt="character pic" />
         </ToastHeader>
         <ToastBody>
           <h2>{name}</h2>
@@ -20,14 +20,6 @@ export default function CharacterCard({ character }) {
           <p>Origin: {origin.name}</p>
         </ToastBody>
       </Toast>
-      
-      {/* {props.character.episode.map(item => (
-        <div className="episodes" key={item}>
-          {item}
-        </div>
-      ))} */}
-    
-
     </div>
   );
 }
