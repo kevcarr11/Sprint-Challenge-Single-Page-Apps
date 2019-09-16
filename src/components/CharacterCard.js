@@ -2,7 +2,7 @@ import React from "react";
 
 export default function CharacterCard({ character }) {
   
-  const {image, name, species, status, location, } = character;
+  const {image, name, species, status, location, origin } = character;
   return (
     <div className="characterCard">
       <img src={image} alt="character pic" />
@@ -11,7 +11,7 @@ export default function CharacterCard({ character }) {
       <br/>
       <p>Location: {location.name}</p>
       <br/>
-      {/* <p>Origin: {origin}</p> */}
+      <p>Origin: {origin.name}</p>
       <h3>Episodes</h3>
 
       {/* {props.character.episode.map(item => (
