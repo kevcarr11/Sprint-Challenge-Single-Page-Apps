@@ -4,7 +4,7 @@ export default function CharacterCard({ character }) {
   
   const {image, name, species, status, location, origin } = character;
   return (
-    <div className="characterCard">
+    <div className="card">
       <img src={image} alt="character pic" />
       <h2>{name}</h2>
       <p>{species}</p><p>{status}</p>
