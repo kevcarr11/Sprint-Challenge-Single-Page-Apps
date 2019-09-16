@@ -5,6 +5,13 @@ export default function LocationCard({ location }) {
 
   const { name, type, dimension, residents } = location;
 
+  let residentsDisplay;
+  if (residents.length === 1){
+    residentsDisplay = "Resident"
+  } else {
+    residentsDisplay = "Residents"
+  }
+
   return (
     <div className="App p-3 bg-info my-2 rounded">
         <Toast>
@@ -14,7 +21,7 @@ export default function LocationCard({ location }) {
             <ToastBody>
             <h5>{type}-{dimension}</h5>
             <br/>
-            <h5><strong><em>{residents.length}</em></strong> Residents</h5>
+            <h5><strong><em>{residents.length}</em></strong> {residentsDisplay}</h5>
             </ToastBody>
         </Toast>
     </div>

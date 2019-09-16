@@ -8,16 +8,13 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
-
-  
 }
 
 .selected{
-  border-left: solid black 1px;
-  border-top: solid black 1px;
-  border-right: solid black 1px;
+  border-left: solid black .05px;
+  border-top: solid black .05px;
+  border-right: solid black .05px;
 }
-
 
 .form,.posts{
   margin-top: 3rem;
