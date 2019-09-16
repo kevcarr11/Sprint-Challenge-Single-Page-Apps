@@ -13,15 +13,15 @@ export default function TabNav() {
                 <Menu.Item icon="home" name='home' />
             </NavLink>
 
-            <NavLink to="/characters" activeClassName="selected" exact>
+            <NavLink to="/characters"  activeClassName="selected" exact>
                 <Menu.Item icon="users" name='characters' />
             </NavLink>
 
-            <NavLink to="/locations" activeClassName="selected" exact>
+            <NavLink to="/locations"  activeClassName="selected" exact>
                 <Menu.Item icon="location arrow" name='locations' />
             </NavLink>
 
-            <NavLink to="/episodes" activeClassName="selected" exact>
+            <NavLink to="/episodes"  activeClassName="selected" exact>
                 <Menu.Item icon="film" name='episodes' />
             </NavLink>
         </Menu>

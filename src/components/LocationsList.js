@@ -18,7 +18,7 @@ export default function LocationsList() {
         <header>
             <h1 className="text-info">LOCATIONS FEATURED IN THE SHOW</h1>
         </header>
-        <section className="character-list grid-view">
+        <section className="App">
             {locations.map(location => (
                 <LocationCard location={location} key={location.id} />
             ))}

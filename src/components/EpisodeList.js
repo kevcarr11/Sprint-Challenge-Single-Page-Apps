@@ -19,7 +19,7 @@ export default function EpisodeList() {
         <header>
             <h1 className="text-info">LIST OF EPISODES</h1>
         </header>
-            <section className="episodeList">
+            <section className="App">
                 {episodes.map(episode => (
                 <EpisodeCard episode={episode} key={episode.id} />
                 ))}

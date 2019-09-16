@@ -8,6 +8,8 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2rem;
+
+  
 }
 
 .selected{
@@ -53,7 +55,7 @@ main {
 
 header h1 {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   padding-top: 30px;
 }
 
@@ -62,4 +64,8 @@ header h1 {
   flex-flow: row wrap;
   justify-content: space-evenly;
   
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
 }

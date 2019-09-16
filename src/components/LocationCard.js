@@ -9,12 +9,12 @@ export default function LocationCard({ location }) {
     <div className="App p-3 bg-info my-2 rounded">
         <Toast>
             <ToastHeader>
-                {name}
+              <h3>{name}</h3>
             </ToastHeader>
             <ToastBody>
-            {type}-{dimension}
+            <h5>{type}-{dimension}</h5>
             <br/>
-            <strong><em>{residents.length}</em></strong> Residents
+            <h5><strong><em>{residents.length}</em></strong> Residents</h5>
             </ToastBody>
         </Toast>
     </div>
