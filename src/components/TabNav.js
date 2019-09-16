@@ -9,19 +9,19 @@ export default function TabNav() {
 
     return (
         <Menu pointing secondary>
-            <NavLink to="/">
+            <NavLink to="/" activeClassName="selected" exact >
                 <Menu.Item icon="home" name='home' />
             </NavLink>
 
-            <NavLink to="/characters">
+            <NavLink to="/characters" activeClassName="selected" exact>
                 <Menu.Item icon="users" name='characters' />
             </NavLink>
 
-            <NavLink to="/locations">
+            <NavLink to="/locations" activeClassName="selected" exact>
                 <Menu.Item icon="location arrow" name='locations' />
             </NavLink>
 
-            <NavLink to="/episodes">
+            <NavLink to="/episodes" activeClassName="selected" exact>
                 <Menu.Item icon="film" name='episodes' />
             </NavLink>
         </Menu>

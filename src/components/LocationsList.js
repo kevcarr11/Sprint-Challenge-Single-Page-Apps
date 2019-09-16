@@ -14,10 +14,15 @@ export default function LocationsList() {
     }, []);
 
     return (
+        <div>
+        <header>
+            <h1 className="text-info">LOCATIONS FEATURED IN THE SHOW</h1>
+        </header>
         <section className="character-list grid-view">
             {locations.map(location => (
                 <LocationCard location={location} key={location.id} />
             ))}
         </section>
+        </div>
     )
 }

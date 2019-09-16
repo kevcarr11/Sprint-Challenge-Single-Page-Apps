@@ -15,10 +15,15 @@ export default function EpisodeList() {
     }, []);
 
     return (
-        <section className="episodeList">
-            {episodes.map(episode => (
-             <EpisodeCard episode={episode} key={episode.id} />
-            ))}
-        </section>
+        <div>
+        <header>
+            <h1 className="text-info">LIST OF EPISODES</h1>
+        </header>
+            <section className="episodeList">
+                {episodes.map(episode => (
+                <EpisodeCard episode={episode} key={episode.id} />
+                ))}
+            </section>
+        </div>
     )
 }

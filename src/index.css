@@ -10,6 +10,12 @@ body {
   padding: 2rem;
 }
 
+.selected{
+  border-left: solid black 1px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+}
+
 
 .form,.posts{
   margin-top: 3rem;
@@ -47,4 +53,13 @@ main {
 
 header h1 {
   text-align: center;
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
+.episodeList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  
 }
