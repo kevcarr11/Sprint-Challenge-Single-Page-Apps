@@ -1,14 +1,15 @@
 import React from "react";
 import { Menu } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
-
+import SearchBar from "./SearchBar";
 
 // TODO: Add missing menu/tabs/nav below
 
 export default function TabNav() {
 
     return (
-        <Menu pointing secondary>
+        
+        <Menu pointing secondary className="navigation">
             <NavLink to="/" activeClassName="selected" exact >
                 <Menu.Item icon="home" name='home' />
             </NavLink>
@@ -24,7 +25,11 @@ export default function TabNav() {
             <NavLink to="/episodes"  activeClassName="selected" exact>
                 <Menu.Item icon="film" name='episodes' />
             </NavLink>
+            <SearchBar />
         </Menu>
+       
+        
+        
     )
 
 };

@@ -11,6 +11,8 @@ import { Route } from "react-router-dom";
 export default function App() {
 
   return (
+    
+    
     <main>
     <Header />
     <TabNav />
@@ -19,6 +21,5 @@ export default function App() {
     <Route path="/locations" component={LocationsList}  />
     <Route path="/episodes" component={EpisodeList} />
     </main>
-  
   );
 }
