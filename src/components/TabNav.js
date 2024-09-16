@@ -1,15 +1,35 @@
 import React from "react";
-import { Tab, Menu, Icon } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
+import SearchBar from "./SearchBar";
 
 // TODO: Add missing menu/tabs/nav below
 
-// Review Semantic UI Component options for nav-like UI:
-// https://react.semantic-ui.com/collections/menu/
-// https://react.semantic-ui.com/modules/tab/
-// https://react.semantic-ui.com/elements/button/
-// https://react.semantic-ui.com/collections/breadcrumb/
-
 export default function TabNav() {
+
+    return (
+        
+        <Menu pointing secondary className="navigation">
+            <NavLink to="/" activeClassName="selected" exact >
+                <Menu.Item icon="home" name='home' />
+            </NavLink>
+
+            <NavLink to="/characters"  activeClassName="selected" exact>
+                <Menu.Item icon="users" name='characters' />
+            </NavLink>
+
+            <NavLink to="/locations"  activeClassName="selected" exact>
+                <Menu.Item icon="location arrow" name='locations' />
+            </NavLink>
+
+            <NavLink to="/episodes"  activeClassName="selected" exact>
+                <Menu.Item icon="film" name='episodes' />
+            </NavLink>
+            <SearchBar />
+        </Menu>
+       
+        
+        
+    )
 
 };

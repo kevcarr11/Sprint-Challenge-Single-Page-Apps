@@ -4,6 +4,22 @@ body {
   font-family: sans-serif;
 }
 
+.App {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.selected{
+  border-left: solid black .05px;
+  border-top: solid black .05px;
+  border-right: solid black .05px;
+}
+
+.form,.posts{
+  margin-top: 3rem;
+}
+
 main {
   width: 85vw;
   min-height: 80vh;
@@ -27,13 +43,37 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
+
 .main-img {
   display: block;
   border-radius: 100%;
   margin: 0 auto;
-} */
+}
 
 header h1 {
   text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.episodeList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+
+@media(max-width: 500px){
+  .navigation{
+    display: flex;
+    flex-direction: column;
+  }
+  .selected{
+    border: solid black .05px;
+  }
 }
